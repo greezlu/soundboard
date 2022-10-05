@@ -7,7 +7,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 100;
-    src: url("font/Roboto-Thin.ttf");
+    src: url("./font/Roboto-Thin.ttf");
     font-display: swap;
 }
 
@@ -15,7 +15,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 100;
-    src: url("font/Roboto-ThinItalic.ttf");
+    src: url("./font/Roboto-ThinItalic.ttf");
     font-display: swap;
 }
 
@@ -27,7 +27,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 300;
-    src: url("font/Roboto-Light.ttf");
+    src: url("./font/Roboto-Light.ttf");
     font-display: swap;
 }
 
@@ -35,7 +35,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 300;
-    src: url("font/Roboto-LightItalic.ttf");
+    src: url("./font/Roboto-LightItalic.ttf");
     font-display: swap;
 }
 
@@ -67,7 +67,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    src: url("font/Roboto-Medium.ttf");
+    src: url("./font/Roboto-Medium.ttf");
     font-display: swap;
 }
 
@@ -75,7 +75,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 500;
-    src: url("font/Roboto-MediumItalic.ttf");
+    src: url("./font/Roboto-MediumItalic.ttf");
     font-display: swap;
 }
 
@@ -87,7 +87,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    src: url("font/Roboto-Bold.ttf");
+    src: url("./font/Roboto-Bold.ttf");
     font-display: swap;
 }
 
@@ -95,7 +95,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 700;
-    src: url("font/Roboto-BoldItalic.ttf");
+    src: url("./font/Roboto-BoldItalic.ttf");
     font-display: swap;
 }
 
@@ -107,7 +107,7 @@
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    src: url("font/Roboto-Black.ttf");
+    src: url("./font/Roboto-Black.ttf");
     font-display: swap;
 }
 
@@ -115,7 +115,7 @@
     font-family: "Roboto";
     font-style: italic;
     font-weight: 900;
-    src: url("font/Roboto-BlackItalic.ttf");
+    src: url("./font/Roboto-BlackItalic.ttf");
     font-display: swap;
 }
 
@@ -134,7 +134,7 @@
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 100;
-    src: url("font/RobotoMono-Thin.ttf");
+    src: url("./font/RobotoMono-Thin.ttf");
     font-display: swap;
 }
 
@@ -142,7 +142,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 100;
-    src: url("font/RobotoMono-ThinItalic.ttf");
+    src: url("./font/RobotoMono-ThinItalic.ttf");
     font-display: swap;
 }
 
@@ -154,7 +154,7 @@
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 300;
-    src: url("font/RobotoMono-Light.ttf");
+    src: url("./font/RobotoMono-Light.ttf");
     font-display: swap;
 }
 
@@ -162,7 +162,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 300;
-    src: url("font/RobotoMono-LightItalic.ttf");
+    src: url("./font/RobotoMono-LightItalic.ttf");
     font-display: swap;
 }
 
@@ -174,7 +174,7 @@
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 400;
-    src: url("font/RobotoMono-Regular.ttf");
+    src: url("./font/RobotoMono-Regular.ttf");
     font-display: swap;
 }
 
@@ -182,7 +182,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 400;
-    src: url("font/RobotoMono-Italic.ttf");
+    src: url("./font/RobotoMono-Italic.ttf");
     font-display: swap;
 }
 
@@ -202,7 +202,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 500;
-    src: url("font/RobotoMono-MediumItalic.ttf");
+    src: url("./font/RobotoMono-MediumItalic.ttf");
     font-display: swap;
 }
 
@@ -214,7 +214,7 @@
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 600;
-    src: url("font/RobotoMono-SemiBold.ttf");
+    src: url("./font/RobotoMono-SemiBold.ttf");
     font-display: swap;
 }
 
@@ -222,7 +222,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 600;
-    src: url("font/RobotoMono-SemiBoldItalic.ttf");
+    src: url("./font/RobotoMono-SemiBoldItalic.ttf");
     font-display: swap;
 }
 
@@ -234,7 +234,7 @@
     font-family: "Roboto Mono";
     font-style: normal;
     font-weight: 700;
-    src: url("font/RobotoMono-Bold.ttf");
+    src: url("./font/RobotoMono-Bold.ttf");
     font-display: swap;
 }
 
@@ -242,7 +242,7 @@
     font-family: "Roboto Mono";
     font-style: italic;
     font-weight: 700;
-    src: url("font/RobotoMono-BoldItalic.ttf");
+    src: url("./font/RobotoMono-BoldItalic.ttf");
     font-display: swap;
 }
 
