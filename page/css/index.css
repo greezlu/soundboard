@@ -9,6 +9,7 @@
     line-height: 1.5;
     outline: none;
     color: black;
+    max-width: 100vw;
 }
 
 body {
