@@ -49,8 +49,8 @@ class Manager
         }
 
         if (this.#audio === audio) {
-            this.#audio = undefined;
             this.#audio.onended = () => {};
+            this.#audio = undefined;
             return;
         }
 
