@@ -1,7 +1,7 @@
 class Manager
 {
     /**
-     * @type {{elem: (HTMLElement), audio: (Audio)}[]}
+     * @type {{elem: (HTMLElement), audio: (HTMLAudioElement)}[]}
      */
     #list = [];
 
@@ -11,18 +11,24 @@ class Manager
     #volume = 1;
 
     /**
+     * @type {HTMLAudioElement}
+     */
+    #audio;
+
+    /**
      * Manager constructor.
      *
      * @param {number} volume
      */
     constructor(volume = 1) {
         this.#volume = volume;
+        this.setVolume(volume);
     }
 
     /**
      * Click event processor.
      *
-     * @param {Event} event
+     * @param {MouseEvent} event
      */
     click(event) {
         let soundItemDiv = event.target.closest("div.sound-item");
@@ -31,21 +37,48 @@ class Manager
             return;
         }
 
-        /** @typedef Audio */
+        if (this.#audio) {
+            this.#audio.currentTime = 0;
+            this.#audio.pause();
+        }
+
         let audio = this.#getAudio(soundItemDiv);
 
         if (!audio) {
             return;
         }
 
-        audio.play();
+        if (this.#audio === audio) {
+            this.#audio = undefined;
+            this.#audio.onended = () => {};
+            return;
+        }
+
+        this.#audio = audio;
+        audio.onended = () => {this.#audio = undefined};
+        this.#audio.play().catch();
+    }
+
+    /**
+     * @param {number} value
+     */
+    setVolume(value) {
+        if (value > 1 || value < 0) {
+            return;
+        }
+
+        this.#list.forEach((item) => {
+            item.audio.volume = value;
+        });
+
+        this.#volume = value;
     }
 
     /**
      * Create new Audio component and save it into inner list.
      *
      * @param {HTMLElement} elem
-     * @return {{elem: (HTMLElement), audio: (Audio)}}
+     * @return {{elem: (HTMLElement), audio: (HTMLAudioElement)}}
      */
     #addComponent (elem) {
         let sourceTitle = elem.closest("section.source")
@@ -72,7 +105,7 @@ class Manager
      * Get Audio object by DOMElement.
      *
      * @param {HTMLElement} elem
-     * @return {Audio}
+     * @return {HTMLAudioElement}
      */
     #getAudio (elem) {
         let component = this.#list.find(item => item.elem === elem)
