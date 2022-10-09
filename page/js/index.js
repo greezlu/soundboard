@@ -1,4 +1,4 @@
-let manager = new Manager();
+let manager = new Manager(0.5);
 let builder = new Builder();
 
 builder.load();
